@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataTableComponent } from './data-table.component';
+import { SideNavbarComponent } from './side-navbar.component';
 
-describe('DataTableComponent', () => {
-  let component: DataTableComponent;
-  let fixture: ComponentFixture<DataTableComponent>;
+describe('SideNavbarComponent', () => {
+  let component: SideNavbarComponent;
+  let fixture: ComponentFixture<SideNavbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataTableComponent ]
+      declarations: [ SideNavbarComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DataTableComponent);
+    fixture = TestBed.createComponent(SideNavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

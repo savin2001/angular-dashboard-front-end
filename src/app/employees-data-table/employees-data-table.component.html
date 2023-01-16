@@ -1,0 +1,27 @@
+<table class="mat-elevation-z8">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Option</th>
+    </tr>
+    <h1 *ngIf="!isResultLoaded">Loading.................</h1>
+  </thead>
+  <tbody>
+    <tr *ngFor="let EmployeeItem of EmployeeArray">
+      <th scope="row">{{EmployeeItem.employee_id }}</th>
+      <td>{{EmployeeItem.employee_name | uppercase}}</td>
+      <td>{{EmployeeItem.employee_email }}</td>
+      <td>{{EmployeeItem.employee_mobile }}</td>
+      <td>
+        <button type="button" class="btn btn-success" (click)="setUpdate(EmployeeItem)">Edit</button>
+
+        <button type="button" class="btn btn-danger" (click)="setDelete(EmployeeItem)">Delete</button>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
