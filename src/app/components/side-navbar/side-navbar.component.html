@@ -14,11 +14,14 @@
 </mat-toolbar>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+
+    <h2>Navigation</h2>
+    <ul>
+      <li><a routerLink="/dashboard"><mat-icon>home</mat-icon> Dashboard</a></li>
+      <li><a routerLink="/employee-sign-up"><mat-icon>playlist_add_circle</mat-icon> Employee Onboarding</a></li>
+      <li><a routerLink="/employee-list"><mat-icon>view_list</mat-icon> Employee Data Table</a></li>
+    </ul>
+
   </mat-drawer>
   <mat-drawer-content class="example-drawer-content"> <router-outlet></router-outlet></mat-drawer-content>
 
